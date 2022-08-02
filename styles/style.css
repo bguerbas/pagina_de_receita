@@ -1,0 +1,97 @@
+:root {
+    --page-background: #eaeaea;
+    --recipe-background: #fff;
+    --titles-subtitles: #1b1b1b;
+    --footer-legend: #8f8f8f;
+    --other_texts: #39393a;
+
+    --font-primary: 'Roboto', sans-serif;
+
+    --font-size-title: 1.75rem;
+    --font-size-subtitle: 1.25rem;
+    --font-size-lits-p: 1rem;
+    --font-size-footer-legend: .75rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--page-background);
+    font-family: var(--font-primary);
+    margin: 2.5rem 10.625rem;
+  }
+
+header,
+.recipe {
+    background: var(--recipe-background);
+    padding: 2.5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+    border-radius: 16px 16px 0 0;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: var(--font-size-title);
+    margin-top: 30px;
+    color: var(--titles-subtitles);
+}
+
+header figure {
+    width: 100%;
+    height: 15.625rem
+}
+
+header img {
+    width: 100%;
+    height: 15.625rem;
+    object-fit: cover;    
+    border-radius: 16px;
+}
+
+header figcaption {
+    margin-top: .375rem;
+    text-align: end;
+    font-size: var(--font-size-footer-legend);
+    color: var(--footer-legend);
+}
+
+.recipe {
+    padding: 1.875rem 3.75rem;    
+    font-size: var(--font-size-lits-p);
+    color: var(--other_texts);
+}
+
+.recipe h3 {
+    text-align: center;
+    color: var(--titles-subtitles);
+    font-size: var(--font-size-subtitle);
+    text-transform: uppercase;
+    padding: 1.875rem 0;
+}
+
+.recipe li {
+    line-height: 3.175rem;
+}
+
+.recipe:last-child {
+    border-radius: 0 0 16px 16px;
+    padding-bottom: 3.125rem;
+}
+
+footer {
+    border-radius: 0 0 16px 16px;
+    text-align: center;
+    margin: 1.875rem 0;
+    font-size: var(--font-size-footer-legend);
+    color: var(--footer-legend);
+}
